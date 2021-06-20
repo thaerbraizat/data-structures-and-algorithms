@@ -3,9 +3,11 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
-Write a function named `addOne` that takes an array of numbers, and returns a new array of the numbers, incremented by 1.
+Write a function named `addOne` that takes an array of numbers,
+ and returns a new array of the numbers, incremented by 1.
 
-Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
+Use `forEach` to loop over the input array and work with each value.
+  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 let arr =[1,2,3,4,5]
@@ -26,16 +28,18 @@ addOne(arr);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named `addExclamation` that takes an array of strings, and returns a new array of the same strings with an "!" added to the end.
+Write a function named `addExclamation` that takes an array of strings,
+ and returns a new array of the same strings with an "!" added to the end.
 
-Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
+Use `forEach` to loop over the input array. 
+Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 let arr =['hi','how','are','you']
   let array=[];
 const addExclamation = (arr) => {
   arr.forEach((element,i) => {
   array[i]=element+'!';
-  console.log(array);
+  
   return(array)
   
   });
@@ -94,25 +98,32 @@ const speaker = (words, callback) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+Write a function named addValues that takes in an array and a value and pushes the 
+value into the array. This function
+ does not need a return statement.
 
 Then, write a function named addNumbers that takes in four arguments:
   - A number to be added to an array
   - An array into which the number should be added
   - The number of times the number should be added
-  - A callback function to use to add the numbers to the array (Hint: you already defined it)
+  - A callback function to use to add the numbers to the array
+   (Hint: you already defined it)
 
 Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
-
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let i = 0; i < times; i++) {
+   arr.push(num);
+  }
+  callback = addValues;
+
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -130,12 +141,18 @@ The inventory is formatted like this:
   { name: 'blueberries', available: false }
 ]
 
-This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+This function should use forEach to populate your grocery list based on the store's inventory.
+ If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
-};
+    let arr = [];
+    availableItems.forEach((element) => {
+      if (element.available)
+      arr.push(element)
+    });
+    return arr;
+  };
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
