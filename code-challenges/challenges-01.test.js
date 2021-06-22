@@ -10,18 +10,19 @@ Use `forEach` to loop over the input array and work with each value.
   Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-let arr =[1,2,3,4,5]
-let array=[];
+
+
 const addOne = (arr) => {
   // Solution code here...
-arr.forEach((element,i) => {
-array[i]=element+1;
-console.log(array);
+  let array=[];
+arr.forEach((element) => {
+array.push(element +1)
+
 return(array)
 
 });
 };
-addOne(arr);
+
 
 
 
@@ -34,9 +35,10 @@ Write a function named `addExclamation` that takes an array of strings,
 Use `forEach` to loop over the input array. 
 Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
-let arr =['hi','how','are','you']
-  let array=[];
+
+ 
 const addExclamation = (arr) => {
+  let array=[];
   arr.forEach((element,i) => {
   array[i]=element+'!';
   
@@ -44,7 +46,7 @@ const addExclamation = (arr) => {
   
   });
   };
-  addOne(arr);
+ 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -53,9 +55,9 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
-let arr =['hi','how','are','you']
-  let array=[];
+
 const allUpperCase = (arr) => {
+  let array=[];
     
   arr.forEach((element,i) => {
   const uppercased = arr.map(arr => arr.toUpperCase());
@@ -76,10 +78,10 @@ Then, write a function named `speaker` that takes in an array of strings and a c
 
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
 ------------------------------------------------------------------------------------------------ */
-let word =['hi','how','are','you']
-let array=[];
+
+
 const greeting = (word) => {
-  
+  let array=[];
 word.forEach((element,i) => {
 const uppercased = arr.map(arr => arr.toUpperCase());
 
