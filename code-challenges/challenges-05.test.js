@@ -73,7 +73,8 @@ const countNumberOfElements = (arr) => {
 CHALLENGE 5
 
 Write a function named returnNames that
-, given the Star Wars data, below, uses reduce to return an array containing the names of the characters.
+, given the Star Wars data, below,
+ uses reduce to return an array containing the names of the characters.
 ------------------------------------------------------------------------------------------------ */
 
 let starWarsData = [{
@@ -137,7 +138,8 @@ const returnNames = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named reversedString that takes in a string and returns a string with the letters in reverse order.
+Write a function named reversedString that takes in a string and returns 
+a string with the letters in reverse order.
 
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
